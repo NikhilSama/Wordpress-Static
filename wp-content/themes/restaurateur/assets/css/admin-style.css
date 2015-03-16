@@ -1,0 +1,7 @@
+.tgmpa h2:before {
+	content: "\f119";
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 20px/1 'dashicons';
+	vertical-align: top;
+}
