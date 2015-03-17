@@ -17,7 +17,9 @@ SKT White WordPress Theme is released under the terms of GNU GPL
 
 
 *{ margin:0; padding:0;}
-body{ margin:0; padding:0; -ms-word-wrap:break-word; font-size:12px; word-wrap:break-word; background-color:#ffffff; line-height:20px; color:#757575; font-family:arial;}
+body{ margin:0; padding:0; -ms-word-wrap:break-word; font-size:12px; word-wrap:break-word; background-color:#ffffff; line-height:20px; color:#757575; font-family:arial;
+background: url(http://static.snaplion.com/wpj/bgnew3.jpg) no-repeat;
+}
 img{ margin:0; padding:0; border:none;}
 section img{max-width:100%;}
 h1,h2,h3,h4,h5,h6{ margin:0; padding:0;}
@@ -122,12 +124,12 @@ body.home .fixed, body.blog .fixed{position:fixed !important; top:0 !important; 
 .header .header-inner .logo a{ color:#3e3e3e;}
 .container{ width:1160px; margin:0 auto; padding:0; position:relative;}
 .toggle{display:none;}
-.header{width:100%; height:auto; position:relative; border-top:#e6e6e6 solid 7px; padding:0; background-color:#f0f0f0;}
+.header{width:100%; height:auto; position:relative; border-top:#e6e6e6 solid 7px; padding:0; background-color:#F1588C;}
 .header .header-inner .nav{ margin:0; padding:0; text-align:right; float:right;}
-.header .header-inner .nav ul { float:right; margin:0; padding:0; font-family:'Open Sans', sans-serif; font-size:13px; font-weight:600;}
+.header .header-inner .nav ul { float:right; margin:0; padding:0; font-family:'Open Sans', sans-serif; font-size:16px; font-weight:600;}
 .header .header-inner .nav ul li{ display:inline-block; margin:0; text-transform:uppercase; position:relative;}
-.header .header-inner .nav ul li a{ color:#3e3e3e; padding:35px 15px; display:block;}
-.header .header-inner .nav ul li a:hover{color:#3e3e3e !important; background-color:#e6e6e6;}
+.header .header-inner .nav ul li a{ color:#3e3e3e; padding:35px 15px !important; display:block;}
+.header .header-inner .nav ul li a:hover{color:#fff !important; background-color:#F7C538;}
 @media screen and (min-width:999px){
 .header .header-inner .nav ul li ul{display:none; z-index:2;}
 .header .header-inner .nav ul li:hover > ul{display:block; background:#ffffff; width:200px; position:absolute; top:85px; left:0; text-align:left; box-shadow:5px 5px 5px #666; }
@@ -136,7 +138,7 @@ body.home .fixed, body.blog .fixed{position:fixed !important; top:0 !important; 
 .header .header-inner .nav ul li:hover ul li ul{display:none;}
 .header .header-inner .nav ul li:hover ul li:hover > ul{display:block; position:absolute; left:200px; top:0px;}
 }
-.header .header-inner .logo{float:left; /*margin-top:35px; */}
+.header .header-inner .logo{float:left; margin-top:0 !important; }
 
 /* --------- Homepage --------- */
 .services { width:100%; margin:0 auto; position:relative; visibility:hidden;}
