@@ -227,7 +227,7 @@ body.home .fixed, body.blog .fixed{position:fixed !important; top:0 !important; 
 #sidebar{ width:270px; margin:0; padding:0; float:right;}
 
 /* ------------ Footer -------- */
-#footer-wrapper { position:relative; padding:55px 0 0; background-color:#fafafa;}
+#footer-wrapper { position:relative; padding:55px 0 0; background-color:#fafafa; display: none;}
 .footer { width:1160px; margin:auto;}
 .footer-col-1 { width:30%; float:left; margin:0 55px 50px 0;}
 .footer-col-3 { width:30%; float:left; margin:0 0 50px 0; }
