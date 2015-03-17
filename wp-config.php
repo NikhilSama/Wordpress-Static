@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'demo');
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '?&nC5p$R#!xk!X/-wuIP)2?neh.W.hn927l@Io0+.A?X/#j4<c6uCjS$O$FQtt*X');
-define('SECURE_AUTH_KEY',  'ycMA|Sp05L]D^1<+{}iP!?%):5sx=t|Ow tB6V,.e,yl_WOqdxaw<(l/zT}+{wZ<');
-define('LOGGED_IN_KEY',    'hc]4qb?l!4YAU?R1D6l;8){NsQbLmw5Zp$9{wuoiKEJ*-dEslqm?0lJ&v}[tnpw|');
-define('NONCE_KEY',        'U OP<tG7sm|]fV~I`7%7ABugsL/kB=ze+;V_{Q-8M>GcTr|/ yCB*nqkL<W&)%u+');
-define('AUTH_SALT',        '|71aU).<bG-2X-|k.awY;#|OI:onF:a2o-;C)%R|CNg?ElSOxxT,9~(J[x/T-d#(');
-define('SECURE_AUTH_SALT', '%L--iSzf7:}JSiN+q3HY_oZ)qq^cQ+9{_$ZotK1Vj +4|G<CG# D+.$HU&MGLnUC');
-define('LOGGED_IN_SALT',   'hE@w@NQG%XH`a;d7oRcY+@i~iDHLli#2}@$6N@7l#-tlkl|ZR#O^DpT@WXNpmr^s');
-define('NONCE_SALT',       '1| @STE<n,QRAWn6i+*f=TSF&@%|opUpNxP} KQdYSriy$+ &Y*Of_(g|FtML+rg');
+define('AUTH_KEY',         '$;Rcl<s& n>R<N&@]Cyh?V$!qy!`mB% N|/F8+z7h/`$wD!n1en>iA30YLU/P:$L');
+define('SECURE_AUTH_KEY',  '#6Idxxi)CK})]Fzv$:BwQO~q]CZ|<w8`x7qz, nZGwg;xc=R0XKAF|bvPCzug[mS');
+define('LOGGED_IN_KEY',    'p>yeNE|/,U(LE:Ub#,Cg<[&FyO=;cS?r>DI?,&@P|UZP5Nd067>%J9p>?yJ;-dl/');
+define('NONCE_KEY',        'm2>ER&z?9-gn% Go+#]2@_l/oIOE^K-Rga@}?9jH-b4qfm# SINZT82}k}~=m2~e');
+define('AUTH_SALT',        'Wb9X~;t02~?Jh@=I1O4(LSJRbjhqphXp TAM`1R-^s`jK]dN@R55}M[`5~?]n?$Z');
+define('SECURE_AUTH_SALT', '2?<R&oS0F7:[$Tb6D@JO?!g+$6{;<m2(9,!=3;]]/?(3^s{IJ;fR>t3HVRZ[7Twq');
+define('LOGGED_IN_SALT',   '=+0/EmD4H__jUH :(HyqL9UJ*-Ul6na9{A42&}gYpQO9%Mfa]I-9 kZ<$FCSAb!N');
+define('NONCE_SALT',       '.(=IuF]g<x$Fh%tLS:n9t/bC94m*G7<w7(bJ`D38eXdn=#FXvSDJesRKfGxYfX[D');
 
 /**#@-*/
 
@@ -70,11 +70,22 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+/* Multisite */
+define( 'WP_ALLOW_MULTISITE', true );
+
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'wordpress.snaplion.com');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-
+define( 'SUNRISE', 'on' );
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
