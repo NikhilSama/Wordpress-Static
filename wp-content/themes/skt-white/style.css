@@ -18,7 +18,11 @@ SKT White WordPress Theme is released under the terms of GNU GPL
 
 *{ margin:0; padding:0;}
 body{ margin:0; padding:0; -ms-word-wrap:break-word; font-size:12px; word-wrap:break-word; background-color:#ffffff; line-height:20px; color:#757575; font-family:arial;
-background: url(http://static.snaplion.com/wpj/bgnew3.jpg) no-repeat;
+background: url(http://static.snaplion.com/wpj/bgnew3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 img{ margin:0; padding:0; border:none;}
 section img{max-width:100%;}
@@ -42,8 +46,8 @@ ul{ list-style:none; margin:0; padding:0;}
 .main-container ol{list-style-position:outside; margin-left:20px;}
 .main-container ol li{margin:5px 0;}
 .toggleMenu{display:none;}
-section{ padding:87px 0 40px; border-bottom:1px solid #e6e6e6;}
-section h2 {font-weight:700; font-size:38px; padding:0 0 50px 0; text-align:center; text-transform:uppercase; color:#404040; font-family:'Roboto Condensed',san-serif;}
+section{ padding:87px 0 40px; border-bottom:1px solid #e6e6e6; background: rgba(0, 0, 0, 0) !important;}
+section h2 {font-weight:700; font-size:38px; padding:0 0 50px 0; text-align:center; text-transform:uppercase; color:#fff; font-family:'Roboto Condensed',san-serif;}
 a.contact-button{ visibility:hidden; width:15%; margin:0 auto;}
 
 #slider{ width:100%; margin:0; padding:0; position:relative;}
@@ -128,7 +132,7 @@ body.home .fixed, body.blog .fixed{position:fixed !important; top:0 !important; 
 .header .header-inner .nav{ margin:0; padding:0; text-align:right; float:right;}
 .header .header-inner .nav ul { float:right; margin:0; padding:0; font-family:'Open Sans', sans-serif; font-size:16px; font-weight:600;}
 .header .header-inner .nav ul li{ display:inline-block; margin:0; text-transform:uppercase; position:relative;}
-.header .header-inner .nav ul li a{ color:#3e3e3e; padding:35px 15px !important; display:block;}
+.header .header-inner .nav ul li a{ color:#fff; padding:35px 15px !important; display:block;}
 .header .header-inner .nav ul li a:hover{color:#fff !important; background-color:#F7C538;}
 @media screen and (min-width:999px){
 .header .header-inner .nav ul li ul{display:none; z-index:2;}
@@ -296,7 +300,7 @@ span.wpcf7-list-item{ margin:0 15px 0 0 !important;}
 .pagination ul li{display:inline; float:left; margin-right:5px;}
 .pagination ul li span, .pagination ul li a{background:#303441; color:#fff; padding:5px 10px; display:inline-block;}
 .pagination ul li .current, .pagination ul li a:hover{background:#00a8ff;}
-h1.entry-title, h1.page-title{padding-bottom:20px; font-size:30px;}
+h1.entry-title, h1.page-title{padding-bottom:20px; font-size:30px; color: #fff;}
 article.tag-sticky-2{background:#f6f6f6; padding:10px;}
 article img{height:auto;}
 article p{margin:10px 0;}
